@@ -1,0 +1,29 @@
+{
+    "team": [
+      {
+        "name": "Salman Akbar Hasbullah",
+        "role": "BackEnd Dev",
+        "npm": "1214073",
+        "description": "Mahasiswa D4 Teknik Informatika Universitas Logistik dan Bisnis Internasional",
+        "social": {
+          "facebook": "https://www.fiverr.com/share/qb8D02",
+          "twitter": "https://www.fiverr.com/share/qb8D02",
+          "skype": "https://www.fiverr.com/share/qb8D02",
+          "google": "https://www.fiverr.com/share/qb8D02"
+        }
+      },
+      {
+        "name": "Nama Lain",
+        "role": "Role Lain",
+        "npm": "NPM Lain",
+        "description": "Deskripsi lain",
+        "social": {
+          "facebook": "Link Lain",
+          "twitter": "Link Lain",
+          "skype": "Link Lain",
+          "google": "Link Lain"
+        }
+      }
+    ]
+  }
+  

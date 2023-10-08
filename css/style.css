@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+}
+
+.container-md {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.content {
+    margin: 20px 0;
+}
+.card-img-top{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+      
+}
+h1 {
+    font-size: 24px;
+}
+
+hr {
+    background-color: #fff;
+}
+#pengantarProposal,
+#latarBelakangProposal,
+#deskripsiWebsite,
+#desaindanFungsionalitas,
+#pemasaran,
+#waktuPelaksanaan,
+#kesimpulan {
+    text-align: justify;}
+    
