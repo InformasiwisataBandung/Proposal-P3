@@ -42,13 +42,6 @@ setInner("desaindanFungsionalitas", `
 <ul>${listDesaindanFungsionalitas.join("")}</ul>
 `);
 
-//Pemasaran
-setInner("pemasaran", `
-<h2>Pemasaran</h2>
-<p>${data.article.Pemasaran}</p>
-<p>${data.article.Pemasaran2}</p>
-<p>${data.article.Pemasaran3}</p>
-`);
 
 //waktuPelaksanaan
 setInner("waktuPelaksanaan", `
@@ -65,69 +58,3 @@ setInner("kesimpulan", `
 `);
 
 // app.js
-
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("./team.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const teamMembers = data.team;
-        const teamSection = document.getElementById("team");
-  
-        if (teamSection) {
-          teamMembers.forEach((member) => {
-            const teamMemberHTML = `
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="card">
-                        <div class="card-body text-center">
-                          <p><img class="img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
-                          <h4 class="card-title">${member.name}</h4>
-                          <p class="card-text">${member.role}</p>
-                          <p class="card-text">${member.description}</p>
-                          <a href="${member.social.facebook}" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="backside">
-                      <div class="card">
-                        <div class="card-body text-center mt-4">
-                          <h4 class="card-title">${member.name}</h4>
-                          <p class="card-text">${member.description}</p>
-                          <ul class="list-inline">
-                            <li class="list-inline-item">
-                              <a class="social-icon text-xs-center" target="_blank" href="${member.social.facebook}">
-                                <i class="fa fa-facebook"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="social-icon text-xs-center" target="_blank" href="${member.social.twitter}">
-                                <i class="fa fa-twitter"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="social-icon text-xs-center" target="_blank" href="${member.social.skype}">
-                                <i class="fa fa-skype"></i>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a class="social-icon text-xs-center" target="_blank" href="${member.social.google}">
-                                <i class="fa fa-google"></i>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            `;
-  
-            teamSection.querySelector(".row").innerHTML += teamMemberHTML;
-          });
-        }
-      });
-  });
-  
